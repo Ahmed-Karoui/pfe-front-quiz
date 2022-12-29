@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { interval } from 'rxjs';
-import { QuestionService } from './../service/question.service';
+import {QuestionService} from "../service/question.service";
+import {interval} from "rxjs";
 
 @Component({
-  selector: 'app-question',
-  templateUrl: './question.component.html',
-  styleUrls: ['./question.component.scss'],
+  selector: 'app-psychologicaltest',
+  templateUrl: './psychologicaltest.component.html',
+  styleUrls: ['./psychologicaltest.component.scss']
 })
-export class QuestionComponent implements OnInit {
+export class PsychologicaltestComponent implements OnInit {
+
+  constructor(private questionService: QuestionService) {}
+
   public name: string = '';
   public questionList: any = [];
   public currentQuestion: number = 0;
@@ -20,7 +23,6 @@ export class QuestionComponent implements OnInit {
   isQuizCompleted: boolean = false;
   isDisabled = true;
 
-  constructor(private questionService: QuestionService) {}
 
   ngOnInit(): void {
     this.name = localStorage.getItem('name')!;
@@ -107,4 +109,5 @@ export class QuestionComponent implements OnInit {
 
     return this.progress;
   }
+
 }

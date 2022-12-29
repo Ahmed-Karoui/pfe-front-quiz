@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { QuestionComponent } from './question/question.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import {QuizchoiceComponent} from "./quizchoice/quizchoice.component";
+import {TechnicaltestComponent} from "./technicaltest/technicaltest.component";
+import {IrttestComponent} from "./irttest/irttest.component";
+import {PsychologicaltestComponent} from "./psychologicaltest/psychologicaltest.component";
 
 const routes: Routes = [
   {
@@ -16,6 +20,22 @@ const routes: Routes = [
   {
     path: 'question',
     component: QuestionComponent,
+  },
+  {
+    path: 'quizchoice',
+    component: QuizchoiceComponent,
+  },
+  {
+    path: 'technicalquiz',
+    component: TechnicaltestComponent,
+  },
+  {
+    path: 'irtquiz',
+    component: IrttestComponent,
+  },
+  {
+    path: 'psychologicaltest',
+    component: PsychologicaltestComponent,
   },
 ];
 
