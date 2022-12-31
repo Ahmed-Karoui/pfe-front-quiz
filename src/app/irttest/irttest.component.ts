@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {QuestionService} from "../service/question.service";
 import {interval} from "rxjs";
+import {TestService} from "../service/test.service";
 
 @Component({
   selector: 'app-irttest',
@@ -9,7 +10,8 @@ import {interval} from "rxjs";
 })
 export class IrttestComponent implements OnInit {
 
-  constructor(private questionService: QuestionService) {}
+  constructor(private questionService: QuestionService,
+              private testService:TestService) {}
 
   public name: string = '';
   public questionList: any = [];
@@ -109,4 +111,17 @@ export class IrttestComponent implements OnInit {
 
     return this.progress;
   }
+
+
+  addTestResult() {
+    const obj = {
+      test_name: 'IRT',
+      test_type:'IRT',
+      irt_score: this.points,
+    };
+    this.testService.addTest(obj).subscribe((data) => {
+    console.log('added')    });
+  }
+
+
 }
