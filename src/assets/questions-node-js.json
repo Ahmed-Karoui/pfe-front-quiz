@@ -1,0 +1,196 @@
+{
+  "questions": [
+    {
+      "questionText": "Which of the following statements are true?",
+      "options": [
+        {
+          "text": "Node.js us a server-side language",
+          "correct": true
+        },
+        {
+          "text": "Node.js is a client-side language"
+        },
+        {
+          "text": "Node.js is both a server and client-side language"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "explanation": " Node.js used Javascript on the server-side"
+    },
+    {
+      "questionText": "_____ is an interactive shell that processes Node.",
+      "options": [
+        {
+          "text": "REPL",
+          "correct": true
+        },
+        {
+          "text": "REAL"
+        },
+        {
+          "text": "RESP"
+        },
+        {
+          "text": "None of the above"
+          
+        }
+      ],
+      "explanation": "REPL is an interactive shell that processes Node"
+    },
+    {
+      "questionText": "What is the full form of REPL?",
+      "options": [
+        {
+          "text": "Real Eval Print Loop",
+          "correct": true
+        },
+        {
+          "text": "Reserch Eval Program Learn"
+          
+        },
+        {
+          "text": "Real Earn Point Learn."
+        },
+        {
+          "text": "Real Eval Point Loop"
+        }
+      ],
+      "explanation": " REPL stands for Read Eval Print Loop."
+    },
+    {
+      "questionText": "Node.js is written in which language?",
+      "options": [
+        {
+          "text": "C++"
+        },
+        {
+          "text": "JavaScript",
+          "correct": true
+        },
+        {
+          "text": "C"
+        },
+        {
+          "text": "Java"
+        }
+      ],
+      "explanation": "Node.js is written in Javascript."
+    },
+    {
+      "questionText": "How can we install the node body-parser module?",
+      "options": [
+        {
+          "text": "npm install body-parser",
+          "correct": true
+        },
+        {
+          "text": "node install body-parser"
+        },
+        {
+          "text": "node.js install body-parser"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "explanation": "We use the npm install ‘module-name’ command to install the node modules. Here the required module is body-parser."
+    },
+    {
+      "questionText": "Which of the following are examples of node modules?",
+      "options": [
+        {
+          "text": "Express"
+        },
+        {
+          "text": "Body-parser"
+        },
+        {
+          "text": "Socket.io"
+        },
+        {
+          "text": "All of the above",
+          "correct": true
+        }
+      ],
+      "explanation": "All of the above-given examples are commonly used node modules."
+    },
+    {
+      "questionText": "To include the HTTP server in the node module, what function do we use?",
+      "options": [
+        {
+          "text": "get()"
+        },
+        {
+          "text": "require()",
+          "correct": true
+        },
+        {
+          "text": "createServer()"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "explanation": "We use the require() function to include the HTTP server in the node module."
+    },
+    {
+      "questionText": "How can we expose node modules?",
+      "options": [
+        {
+          "text": "exports",
+          "correct": true
+        },
+        {
+          "text": "expose"
+        },
+        {
+          "text": "requires"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "explanation": "The node.js modules can be exposed using module.exports."
+    },
+    {
+      "questionText": "What method is used to return the current working directory of the process?",
+      "options": [
+        {
+          "text": "cwd()",
+          "correct": true
+        },
+        {
+          "text": "pwd()"
+        },
+        {
+          "text": "cmd()"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "explanation": "The process.cwd() is used to return the current working directory of the current process."
+    },
+    {
+      "questionText": "Default scope in Node.js application is ?",
+      "options": [
+        {
+          "text": "Global"
+        },
+        {
+          "text": "Local",
+          "correct": true
+        },
+        {
+          "text": "Local to Object"
+        },
+        {
+          "text": "None of the above"
+        }
+      ],
+      "explanation": "Local is the default scope in Node.js applications."
+    }
+  ]
+}
